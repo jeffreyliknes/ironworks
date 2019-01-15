@@ -1,0 +1,32 @@
+.header-logo {
+  height: 60px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+  background: gray;
+  opacity: 0.5;
+  height: 6.3rem;
+  position: fixed;
+}
+
+.navigation-left {
+  align-self: center;
+  padding-left: 3rem;
+  ul {
+    li {
+      padding-right: 2rem;
+    }
+  }
+}
+
+.navigation-wrapper {
+  background: black;
+  height: 100px;
+}
+
+.site-branding {
+    margin: auto 0;
+  
+}
