@@ -32,13 +32,13 @@ get_header(); ?>
 			<section class="slogan">
 			<div class="main-carousel">
   				<div class="carousel-cell">
-					<h2>Call or Come in Today!</h2>
+					<h2>Weld and Forge Projects</h2>
 				</div>
   				<div class="carousel-cell">
 					<h2>Call or Come in Today!</h2>
 				</div>
   				<div class="carousel-cell">
-					<h2>Come in for a visit</h2>
+					<h2>Locally Made</h2>
 				</div>
 			</div>  
 			</section>
@@ -84,14 +84,15 @@ get_header(); ?>
 				foreach($terms as $term): ?>
 			
 					<div class="frontpage-term">
+						<p class="text-transition">Locally</p>
        					<p class="frontpage-term-link"><a href="<?php echo get_term_link( $term ); ?>">
-       					<?php echo $term->name; ?></a></p>
-
+						   <?php echo $term->name; ?></a></p>
+						<p class="text-transition">Made</p>
     				</div>
     			<?php endforeach;?>
         
-    </div>
-        </section>
+    	</div>
+    </section>
 
 
 

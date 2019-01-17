@@ -673,6 +673,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home {
+  margin-top: 32px; }
+
 .banner {
   display: relative; }
   .banner .sisters {
@@ -682,6 +685,7 @@ object {
     background-position: 22%;
     background-size: 100%, 515px; }
     .banner .sisters .contact-banner {
+      font-family: 'Ubuntu', sans-serif;
       position: absolute;
       top: 180px;
       right: 300px;
@@ -703,14 +707,131 @@ object {
     display: none; }
   .slogan .main-carousel h2 {
     text-align: center;
-    color: rgba(255, 195, 85, 0.452); }
+    color: rgba(255, 195, 85, 0.452);
+    font-family: 'Raleway', sans-serif; }
 
-.article-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  margin-top: 6rem;
-  margin-bottom: 3rem; }
+.frontpage-shop {
+  text-align: center; }
+  .frontpage-shop h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255, 195, 85, 0.452);
+    font-size: 4rem; }
+
+.frontpage-block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.frontpage-term {
+  min-height: 60vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.frontpage-term {
+  background: #6b0f9c;
+  -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  -webkit-transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s, -webkit-box-flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s, -webkit-box-flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s, -webkit-box-flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), -ms-flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.frontpage-term:first-child {
+  background-image: url(../../assets/fireplace.jpg); }
+
+.frontpage-term:nth-child(2) {
+  background-image: url(../../assets/housing.jpg); }
+
+.frontpage-term:last-child {
+  background-image: url(../../assets/railings.jpg); }
+
+/* Flex Children */
+.frontpage-term > * {
+  margin: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.frontpage-term > *:first-child {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+.frontpage-term.open-active > *:first-child {
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
+
+.frontpage-term > *:last-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%); }
+
+.frontpage-term.open-active > *:last-child {
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
+
+.frontpage-term p {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1.6em; }
+
+.frontpage-term p:nth-child(2) {
+  font-size: 2.5rem; }
+
+.frontpage-term.open {
+  font-size: 2.5rem;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5; }
+
+.frontpage-term-link a {
+  text-decoration: none;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 white, 1px 1px 0 gray; }
+  .frontpage-term-link a:hover {
+    color: #9c0404; }
+
+.site-footer {
+  margin-top: 4rem; }
 
 body.admin-bar .site-header {
   top: 30px; }
@@ -874,5 +995,28 @@ body {
 .main-carousel .carousel-cell {
   width: 100%; }
 
-.page .site-main {
-  padding-top: 5rem; }
+.archive .site-main {
+  padding-top: 10rem;
+  width: 1120px;
+  margin: 0 auto; }
+
+.page-title {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(255, 195, 85, 0.452);
+  font-size: 4rem;
+  text-align: center; }
+
+.single-term-description {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 195, 85, 0.452);
+  border-bottom: 10px rgba(255, 195, 85, 0.452) groove; }
+
+.product-container {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }

@@ -19,7 +19,7 @@ get_header(); ?>
       <p>Give</p>
       <p>Take</p>
       <p>Receive</p>
-    </div>
+    </div> 
     <div class="panel panel3">
       <p>Experience</p>
       <p>It</p>

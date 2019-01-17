@@ -31,4 +31,23 @@
   prevNextButtons: false,
 });
 
+const frontpageTerms = document.querySelectorAll('.frontpage-term');
+
+function toggleOpen() {
+  this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+  
+  if(e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+  }
+}
+
+
+frontpageTerms.forEach(frontpageTerm => frontpageTerm.addEventListener('click', toggleOpen));
+frontpageTerms.forEach(frontpageTerm => frontpageTerm.addEventListener('transitionend', toggleActive));
+
+
+
 })(jQuery);

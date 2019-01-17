@@ -1,0 +1,29 @@
+.archive {
+  .site-main {
+    padding-top: 10rem;
+    width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+.page-title {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255, 195, 85, 0.452);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.single-term-description {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 195, 85, 0.452);
+    border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
+    
+}
+
+.product-container {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
