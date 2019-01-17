@@ -1,4 +1,8 @@
-.archive {
+.page-template-archive-product {
+  background: linear-gradient(rgb(65, 64, 64), black);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   .site-main {
     padding-top: 10rem;
     width: 1120px;
@@ -7,23 +11,59 @@
 }
 
 .page-title {
-    font-family: 'Ubuntu', sans-serif;
-    color: rgba(255, 195, 85, 0.452);
-    font-size: 4rem;
-    text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(255, 195, 85, 0.452);
+  font-size: 4rem;
+  text-align: center;
 }
 
 .single-term-description {
-    font-size: 1.8rem;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: rgba(255, 195, 85, 0.452);
-    border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
-    
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 195, 85, 0.452);
+  border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
 }
 
 .product-container {
-    margin-top: 6rem;
-    display: flex;
-    flex-wrap: wrap;
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  .product-archive {
+      img {
+        border-radius: 25%;
+        height: 300px;
+        width: auto;
+      }
+  }
 }
+.archive-product-info {
+  text-align: center;
+  color: rgba(255, 195, 85, 0.452);
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include container-block;
+    grid-gap: 30px;
+    
+    .thumbnail-container {
+      background-color: black;
+      border-radius: 25%;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        left: 50%;
+        min-height: 250px;
+        max-width: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+       
+      }
+    }
+  }
