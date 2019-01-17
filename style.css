@@ -572,6 +572,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.no-results .page-content {
+  display: none; }
+
 .sticky {
   display: block; }
 
@@ -871,5 +874,5 @@ body {
 .main-carousel .carousel-cell {
   width: 100%; }
 
-.site-main {
+.page .site-main {
   padding-top: 5rem; }

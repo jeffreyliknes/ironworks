@@ -71,27 +71,24 @@ get_header(); ?>
 				
 				<!-- End of Default loop -->
 				
-				<section class="frontpage-shop">
-           <h2>Shop Stuff</h2>
-        <div class="frontpage-block-container">
-        <?php 
-        $terms = get_terms(array(
-            'taxonomy' => 'product_type',
-            'hide_empty' => 0,
-           
-        ));
-        foreach($terms as $term): ?>
-            <div class="frontpage-term">
-       
-     
-       
+			<section class="frontpage-shop">
+           		<h2>Pick your Project!</h2>
+			
+				<div class="frontpage-block-container">
+        			<?php 
+        			$terms = get_terms(array(
+            	'taxonomy' => 'product_type',
+            	'hide_empty' => 0,   
+        		));
+		
+				foreach($terms as $term): ?>
+			
+					<div class="frontpage-term">
+       					<p class="frontpage-term-link"><a href="<?php echo get_term_link( $term ); ?>">
+       					<?php echo $term->name; ?></a></p>
 
-       <p> <?php echo $term->description; ?></p>
-       <p class="frontpage-term-link"><a href="<?php echo get_term_link( $term ); ?>">
-       <?php echo $term->name; ?> Stuff</a></p>
-
-    </div>
-    <?php endforeach;?>
+    				</div>
+    			<?php endforeach;?>
         
     </div>
         </section>
