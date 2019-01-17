@@ -71,7 +71,9 @@ get_header(); ?>
 				
 				<!-- End of Default loop -->
 				
-				<section class="frontpage-shop">
+
+
+  <section class="frontpage-shop">
            <h2>Shop Stuff</h2>
         <div class="frontpage-block-container">
         <?php 
@@ -83,7 +85,7 @@ get_header(); ?>
         foreach($terms as $term): ?>
             <div class="frontpage-term">
        
-     
+      
        
 
        <p> <?php echo $term->description; ?></p>
@@ -95,8 +97,6 @@ get_header(); ?>
         
     </div>
         </section>
-
-
 
 	</div>
 </section>

@@ -680,14 +680,34 @@ object {
     background-size: 100%, 515px; }
     .banner .sisters .contact-banner {
       position: absolute;
-      top: 325px;
-      right: 530px;
+      top: 180px;
+      right: 300px;
       list-style: none; }
+      .banner .sisters .contact-banner .fas {
+        color: black; }
+      .banner .sisters .contact-banner .underline {
+        text-decoration: none;
+        font-size: 2rem;
+        color: #681f1e; }
 
 .slogan {
-  height: 200px; }
-  .slogan h2 {
-    text-align: center; }
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: red 1px solid; }
+  .slogan .main-carousel ol {
+    display: none; }
+  .slogan .main-carousel h2 {
+    text-align: center;
+    color: rgba(255, 195, 85, 0.452); }
+
+.article-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  margin-top: 6rem;
+  margin-bottom: 3rem; }
 
 body.admin-bar .site-header {
   top: 30px; }
@@ -828,10 +848,11 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: gray;
+  background: #c0bfbf;
   opacity: 0.5;
   height: 6.3rem;
-  position: fixed; }
+  position: fixed;
+  z-index: 1000; }
 
 .navigation-left {
   -ms-flex-item-align: center;
@@ -846,3 +867,9 @@ body {
 
 .site-branding {
   margin: auto 0; }
+
+.main-carousel .carousel-cell {
+  width: 100%; }
+
+.site-main {
+  padding-top: 5rem; }

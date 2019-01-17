@@ -2,7 +2,9 @@
   "name": "ironworks",
   "version": "1.1.0",
   "description": "A starter theme for ironworks, based on Underscores.",
-  "dependencies": {},
+  "dependencies": {
+    "flickity": "^2.1.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",

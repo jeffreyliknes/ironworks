@@ -5,10 +5,12 @@
 .main-navigation {
   display: flex;
   justify-content: space-around;
-  background: gray;
+  background: rgb(192, 191, 191);
   opacity: 0.5;
   height: 6.3rem;
   position: fixed;
+  z-index: 1000;
+  
 }
 
 .navigation-left {
@@ -30,3 +32,7 @@
     margin: auto 0;
   
 }
+
+.main-carousel .carousel-cell {
+    width: 100%;
+  }

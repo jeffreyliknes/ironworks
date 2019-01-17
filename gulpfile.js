@@ -64,7 +64,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:3000/ironworks'
+    proxy: 'localhost:8881/ironworks'
   });
 
   gulp.watch(files).on('change', browserSync.reload);

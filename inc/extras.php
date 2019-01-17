@@ -25,7 +25,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/kens logo.svg);
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.svg);
 		height:65px;
 		width:320px;
 		background-size: 320px 65px;
@@ -45,3 +45,49 @@ function my_login_logo_url_title() {
     return 'Ironworks';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+
+// Replaces the excerpt "Read More" text by a link
+function ironworks_excerpt_more( $more ) {
+	global $post;
+ return ' [...]<p><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More &rarr;</a></p>';
+}
+add_filter('excerpt_more', 'ironworks_excerpt_more');
+
+/*
+*Filter the product archive title
+*/
+
+function ironworks_archive_title( $title ) {
+	if( is_post_type_archive( 'product' ) ) {
+		$title = 'Shop Stuff';
+	} elseif( is_tax( 'product_type' ) ) {
+		$title = sprintf( '%1$s', single_term_title( '', false ) );
+	}
+	return $title;
+}
+
+
+add_filter('get_the_archive_title', 'ironworks_archive_title' );
+
+
+/*
+*Modify the Product post type archive loop
+*/
+
+function ironworks_mod_post_type_archive( $query ) {
+	if(
+		( is_post_type_archive( array( 'product' ) ) || $query->is_tax( 'product_type' ) )
+		&& !is_admin()
+		&& $query->is_main_query()
+	){
+		$query->set( 'orderby', 'title' );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 16 );
+	}
+} 
+
+
+
+add_action( 'pre_get_posts', 'ironworks_mod_post_type_archive' );
