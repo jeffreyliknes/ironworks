@@ -1,5 +1,42 @@
 .site-info {
-    height: 200px;
-    color: white;
-    background: url(../../assets/dark-wood.png);
+  height: 220px;
+  color: white;
+  background: url(../../assets/dark-wood.png);
 }
+
+.footer-info {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 0 0;
+  
+  .footer-wrapper {
+    .footer-contact-banner {
+      p {
+        font-size: 1rem;
+        i {
+          color: rgb(180, 174, 162);
+        }
+        a {
+          text-decoration: none;
+          color: rgb(245, 207, 137);
+          font-family: 'Ubuntu', sans-serif;
+        }
+      }
+    }
+  }
+}
+
+.footer-logo-wrapper {
+    width: 150px;
+}
+
+.info-logo-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+

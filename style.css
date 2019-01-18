@@ -763,13 +763,15 @@ object {
           flex-direction: column; }
 
 .frontpage-term:first-child {
-  background-image: url(../../assets/fireplace.jpg); }
+  background-image: url(../../assets/fireplace.jpg);
+  border-right: black 1px solid; }
 
 .frontpage-term:nth-child(2) {
   background-image: url(../../assets/housing.jpg); }
 
 .frontpage-term:last-child {
-  background-image: url(../../assets/railings.jpg); }
+  background-image: url(../../assets/railings.jpg);
+  border-left: black 1px solid; }
 
 /* Flex Children */
 .frontpage-term > * {
@@ -824,9 +826,10 @@ object {
           flex: 5; }
 
 .frontpage-term-link a {
+  letter-spacing: 2px;
   text-decoration: none;
   color: black;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 white, 1px 1px 0 gray; }
+  text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
   .frontpage-term-link a:hover {
     color: #9c0404; }
 
@@ -959,9 +962,36 @@ body {
           flex: 5; }
 
 .site-info {
-  height: 200px;
+  height: 220px;
   color: white;
   background: url(../../assets/dark-wood.png); }
+
+.footer-info {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 0 0; }
+  .footer-info .footer-wrapper .footer-contact-banner p {
+    font-size: 1rem; }
+    .footer-info .footer-wrapper .footer-contact-banner p i {
+      color: #b4aea2; }
+    .footer-info .footer-wrapper .footer-contact-banner p a {
+      text-decoration: none;
+      color: #f5cf89;
+      font-family: 'Ubuntu', sans-serif; }
+
+.footer-logo-wrapper {
+  width: 150px; }
+
+.info-logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1rem; }
 
 .header-logo {
   height: 60px; }
@@ -994,6 +1024,9 @@ body {
 
 .main-carousel .carousel-cell {
   width: 100%; }
+
+.page-template-find-us .site-content {
+  padding-top: 10rem; }
 
 .page-template-archive-product {
   background: -webkit-gradient(linear, left top, left bottom, from(#414040), to(black));

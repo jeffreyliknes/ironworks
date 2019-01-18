@@ -58,11 +58,7 @@
   }
 }
 
-// .article-wrapper {
-//   @include container-block;
-//   margin-top: 6rem;
-//   margin-bottom: 3rem;
-// }
+
 
 // 3 moving panels
 
@@ -98,12 +94,15 @@
 
 .frontpage-term:first-child {
   background-image: url(../../assets/fireplace.jpg);
+  border-right: black 1px solid;
 }
 .frontpage-term:nth-child(2) {
   background-image: url(../../assets/housing.jpg);
 }
 .frontpage-term:last-child {
   background-image: url(../../assets/railings.jpg);
+  border-left: black 1px solid;
+
 }
 
 /* Flex Children */
@@ -149,9 +148,10 @@
 
 .frontpage-term-link {
   a {
+    letter-spacing: 2px;
     text-decoration: none;
     color: black;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 white,
+    text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 gray,
       1px 1px 0 gray;
     &:hover {
       color: rgb(156, 4, 4);

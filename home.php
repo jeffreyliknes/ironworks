@@ -16,15 +16,15 @@ get_header(); ?>
 					<h1 class="contact-banner">
 					  <p>
 				        <i class="fas fa-phone"></i>
-				        <a class="underline phone-number" href="#">778-456-7891</a>
+				        <a class="underline phone-number" href="#">403-431-3667</a>
 					  </p>
 					  <p>
 					    <i class="fas fa-envelope-open"></i>
-				        <a class="underline email-banner" href="#">kennyanuscow</a>
+				        <a class="underline email-banner" href="#">ironken@gmail.com</a>
 					  </p>
 					  <p>
 					    <i class="fas fa-directions"></i>
-				        <a class="underline directions-banner" href="./find-us">Deadman's</a>
+				        <a class="underline directions-banner" href="./find-us">Canmore, AB</a>
 				      </p>
 					</h1>
 				</div>
