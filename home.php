@@ -29,6 +29,7 @@ get_header(); ?>
 					</h1>
 				</div>
 			</section>
+			
 			<section class="slogan">
 			<div class="main-carousel">
   				<div class="carousel-cell">

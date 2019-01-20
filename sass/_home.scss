@@ -1,11 +1,9 @@
-.home {
-  margin-top: 32px;
-}
+
 
 .banner {
   display: relative;
   .sisters {
-    height: 74vh;
+    height: 83vh;
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.1) 0,
@@ -18,7 +16,7 @@
     .contact-banner {
       font-family: 'Ubuntu', sans-serif;
       position: absolute;
-      top: 180px;
+      top: 160px;
       right: 300px;
       list-style: none;
       .fas {

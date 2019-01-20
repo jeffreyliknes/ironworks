@@ -673,13 +673,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.home {
-  margin-top: 32px; }
-
 .banner {
   display: relative; }
   .banner .sisters {
-    height: 74vh;
+    height: 83vh;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2)), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
     background-position: 22%;
@@ -687,7 +684,7 @@ object {
     .banner .sisters .contact-banner {
       font-family: 'Ubuntu', sans-serif;
       position: absolute;
-      top: 180px;
+      top: 160px;
       right: 300px;
       list-style: none; }
       .banner .sisters .contact-banner .fas {
@@ -994,7 +991,11 @@ body {
   padding-bottom: 1rem; }
 
 .header-logo {
-  height: 60px; }
+  height: 60px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out; }
+  .header-logo:hover {
+    height: 70px; }
 
 .main-navigation {
   display: -webkit-box;
@@ -1002,22 +1003,31 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #c0bfbf;
+  background: transparent;
   opacity: 0.7;
   height: 6.3rem;
   position: fixed;
   z-index: 1000; }
 
-.navigation-left {
+.navigation-options {
   -ms-flex-item-align: center;
       align-self: center;
   padding-left: 3rem; }
-  .navigation-left ul li {
+  .navigation-options ul li {
     padding-right: 2rem; }
+    .navigation-options ul li a {
+      font-weight: 400;
+      font-size: 1.7rem;
+      color: black;
+      -webkit-transition: font-size 0.3s ease-in-out;
+      transition: font-size 0.3s ease-in-out; }
+      .navigation-options ul li a:hover {
+        font-size: 1.9rem; }
 
-.navigation-wrapper {
-  background: black;
-  height: 100px; }
+nav.nav-top {
+  background: rgba(0, 0, 0, 0.788); }
+  nav.nav-top li a {
+    color: white; }
 
 .site-branding {
   margin: auto 0; }
@@ -1025,8 +1035,29 @@ body {
 .main-carousel .carousel-cell {
   width: 100%; }
 
-.page-template-find-us .site-content {
-  padding-top: 10rem; }
+.page-template-find-us {
+  min-height: 110vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#414040), to(black));
+  background: linear-gradient(#414040, black); }
+  .page-template-find-us .site-main {
+    padding-top: 6rem;
+    width: 1120px;
+    margin: 0 auto; }
+  .page-template-find-us .site-content {
+    padding-top: 7rem; }
+  .page-template-find-us .navigation-options a {
+    color: white; }
+
+.entry-title {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(255, 195, 85, 0.452);
+  font-size: 4rem;
+  text-align: center;
+  border-bottom: 10px rgba(255, 195, 85, 0.452) groove; }
+
+.directions {
+  height: 100px;
+  background: red; }
 
 .page-template-archive-product {
   background: -webkit-gradient(linear, left top, left bottom, from(#414040), to(black));

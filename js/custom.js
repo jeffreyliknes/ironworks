@@ -1,6 +1,7 @@
 (function($) {
   $(document).ready();
 
+
  const panels = document.querySelectorAll('.panel');
 
  function toggleOpen() {
@@ -31,6 +32,9 @@
   prevNextButtons: false,
 });
 
+
+// Front Page Panels
+
 const frontpageTerms = document.querySelectorAll('.frontpage-term');
 
 function toggleOpen() {
@@ -42,12 +46,20 @@ function toggleActive(e) {
   if(e.propertyName.includes('flex')) {
     this.classList.toggle('open-active');
   }
-}
-
+};
 
 frontpageTerms.forEach(frontpageTerm => frontpageTerm.addEventListener('click', toggleOpen));
 frontpageTerms.forEach(frontpageTerm => frontpageTerm.addEventListener('transitionend', toggleActive));
 
+
+// Sticky Nav
+
+$(window).on('scroll', function(){
+  if($(window).scrollTop()) {
+    $('nav').addClass('nav-top')
+  } else {
+  ($('nav').removeClass('nav-top'))
+  }});
 
 
 })(jQuery);
