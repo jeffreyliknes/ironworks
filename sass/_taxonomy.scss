@@ -5,9 +5,10 @@
     flex-direction: column;
     .site-main {
       padding-top: 10rem;
-      width: 1120px;
+  
       margin: 0 auto;
     }
+  
   }
   
   .page-title {
@@ -26,7 +27,6 @@
   }
   
   .product-container {
-    margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     .product-archive {

@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 .site-info {
   height: 220px;
   color: white;
@@ -5,14 +17,13 @@
 }
 
 .footer-info {
-  width: 1120px;
-  margin: 0 auto;
-  padding: 1rem 0 0;
-  
   .footer-wrapper {
     .footer-contact-banner {
       p {
-        font-size: 1rem;
+        font-size: 14px;
+        @include tablet {
+          font-size: 1rem;
+        }
         i {
           color: rgb(180, 174, 162);
         }
@@ -26,8 +37,12 @@
   }
 }
 
-.footer-logo-wrapper {
-    width: 150px;
+@include tablet {
+  .footer-logo-wrapper {
+      width: 150px;
+      margin: auto 0;
+  }
+
 }
 
 .info-logo-wrapper {

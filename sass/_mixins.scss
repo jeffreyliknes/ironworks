@@ -16,3 +16,23 @@
 	margin-right: auto;
 	width: 1120px;
   }
+
+
+//   Media Queries Mobile, Tablet, and Desktop
+
+$tablet-width: 600px;
+
+$desktop-width: 1080px;
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+

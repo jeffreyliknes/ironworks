@@ -11,10 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
       <div class="container">
 			  <header class="page-header">
-			  <?php
-					the_archive_title( '<h2 class="page-title">', '</h2>' );
-				?>
+			 <h2 class="page-title">Archive</h2>
           <div class="shop-term-container">
+        
         <?php
         
           $terms = get_terms(array(
@@ -46,12 +45,11 @@ get_header(); ?>
           </a>
 		    </div>
 		  <div class="archive-product-info">         
-        <div class="after-title"></div>
-          <?php the_title(); ?>
-                   
-        <div class="dots"></div>
-          <p class="product-price"> </p>
-                
+       
+        <a class="single-product-title" href="<?php echo get_permalink(); ?>"><?php if (  the_title()  ) : ?>
+            <?php the_title(); ?>
+            <?php endif; ?>
+          </a>       
         </div>
       </div>
     <?php endwhile; ?>

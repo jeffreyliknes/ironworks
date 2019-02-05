@@ -423,8 +423,6 @@ a {
   color: royalblue; }
   a:visited {
     color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -680,7 +678,8 @@ object {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2)), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
     background-position: 22%;
-    background-size: 100%, 515px; }
+    background-size: 100%, 515px;
+    opacity: 0.95; }
     .banner .sisters .contact-banner {
       font-family: 'Ubuntu', sans-serif;
       position: absolute;
@@ -963,21 +962,22 @@ body {
   color: white;
   background: url(../../assets/dark-wood.png); }
 
-.footer-info {
-  width: 1120px;
-  margin: 0 auto;
-  padding: 1rem 0 0; }
-  .footer-info .footer-wrapper .footer-contact-banner p {
-    font-size: 1rem; }
-    .footer-info .footer-wrapper .footer-contact-banner p i {
-      color: #b4aea2; }
-    .footer-info .footer-wrapper .footer-contact-banner p a {
-      text-decoration: none;
-      color: #f5cf89;
-      font-family: 'Ubuntu', sans-serif; }
+.footer-info .footer-wrapper .footer-contact-banner p {
+  font-size: 14px; }
+  @media (min-width: 600px) {
+    .footer-info .footer-wrapper .footer-contact-banner p {
+      font-size: 1rem; } }
+  .footer-info .footer-wrapper .footer-contact-banner p i {
+    color: #b4aea2; }
+  .footer-info .footer-wrapper .footer-contact-banner p a {
+    text-decoration: none;
+    color: #f5cf89;
+    font-family: 'Ubuntu', sans-serif; }
 
-.footer-logo-wrapper {
-  width: 150px; }
+@media (min-width: 600px) {
+  .footer-logo-wrapper {
+    width: 150px;
+    margin: auto 0; } }
 
 .info-logo-wrapper {
   display: -webkit-box;
@@ -1018,7 +1018,7 @@ body {
     .navigation-options ul li a {
       font-weight: 400;
       font-size: 1.7rem;
-      color: black;
+      color: rgba(245, 177, 50, 0.979);
       -webkit-transition: font-size 0.3s ease-in-out;
       transition: font-size 0.3s ease-in-out; }
       .navigation-options ul li a:hover {
@@ -1081,20 +1081,38 @@ nav.nav-top {
   font-size: 4rem;
   text-align: center; }
 
+.shop-term-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 2rem; }
+  .shop-term-container a {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255, 195, 85, 0.452);
+    font-size: 2rem;
+    text-decoration: none; }
+    .shop-term-container a:hover {
+      text-decoration: underline;
+      color: rgba(197, 129, 2, 0.925); }
+
 .single-term-description {
   font-size: 1.8rem;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: rgba(255, 195, 85, 0.452);
-  border-bottom: 10px rgba(255, 195, 85, 0.452) groove; }
+  border-bottom: 10px rgba(253, 253, 253, 0.452), groove; }
 
 .product-container {
-  margin-top: 6rem;
+  padding-top: 3rem;
+  border-top: dashed 2px rgba(255, 195, 85, 0.452);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  border-top: 1px dashed rgba(255, 195, 85, 0.452); }
   .product-container .product-archive img {
     border-radius: 25%;
     height: 300px;
@@ -1110,7 +1128,8 @@ nav.nav-top {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  padding-bottom: 3rem; }
   .product-container .thumbnail-container {
     background-color: black;
     border-radius: 25%;
@@ -1127,6 +1146,11 @@ nav.nav-top {
               transform: translate(-50%, -50%);
       width: auto; }
 
+.single-product-title {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: #5555ee; }
+
 .archive {
   background: -webkit-gradient(linear, left top, left bottom, from(#414040), to(black));
   background: linear-gradient(#414040, black);
@@ -1140,7 +1164,6 @@ nav.nav-top {
           flex-direction: column; }
   .archive .site-main {
     padding-top: 10rem;
-    width: 1120px;
     margin: 0 auto; }
 
 .page-title {
@@ -1157,7 +1180,6 @@ nav.nav-top {
   border-bottom: 10px rgba(255, 195, 85, 0.452) groove; }
 
 .product-container {
-  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

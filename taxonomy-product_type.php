@@ -38,10 +38,12 @@ get_header(); ?>
         </a>
 		</div>
 		<div class="archive-product-info">
-      <div class="after-title"></div>
-        <?php the_title(); ?> 
-        <div class="dots"></div>
-          <p class="product-price"> </p>
+    <a class="single-product-title" href="<?php echo get_permalink(); ?>"><?php if (  the_title()  ) : ?>
+            <?php the_title(); ?>
+            <?php endif; ?>
+          </a>
+     
+       
            
         </div>
     	</div>

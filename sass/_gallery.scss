@@ -15,6 +15,25 @@
   color: rgba(255, 195, 85, 0.452);
   font-size: 4rem;
   text-align: center;
+  
+}
+
+$galleryColor: rgba(253, 253, 253, 0.452);
+
+.shop-term-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  a {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255, 195, 85, 0.452);
+    font-size: 2rem;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: rgba(197, 129, 2, 0.925);
+    }
+  }
 }
 
 .single-term-description {
@@ -22,48 +41,57 @@
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: rgba(255, 195, 85, 0.452);
-  border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
+  border-bottom: 10px rgba(253, 253, 253, 0.452), groove;
 }
 
-.product-container {
-  margin-top: 6rem;
-  display: flex;
-  flex-wrap: wrap;
-  .product-archive {
+  .product-container {
+    padding-top: 3rem;
+    border-top: dashed 2px rgba(255, 195, 85, 0.452); 
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px dashed rgba(255, 195, 85, 0.452);
+    .product-archive {
       img {
         border-radius: 25%;
         height: 300px;
         width: auto;
       }
+    }
   }
-}
+
 .archive-product-info {
   text-align: center;
   color: rgba(255, 195, 85, 0.452);
 }
 
 .product-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    @include container-block;
-    grid-gap: 30px;
-    
-    .thumbnail-container {
-      background-color: black;
-      border-radius: 25%;
-      height: 250px;
-      overflow: hidden;
-      position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @include container-block;
+  grid-gap: 30px;
+  padding-bottom: 3rem;
 
-      img {
-        left: 50%;
-        min-height: 250px;
-        max-width: none;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: auto;
-       
-      }
+  .thumbnail-container {
+    background-color: black;
+    border-radius: 25%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      left: 50%;
+      min-height: 250px;
+      max-width: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
     }
   }
+}
+
+.single-product-title {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(85, 85, 238);
+}
