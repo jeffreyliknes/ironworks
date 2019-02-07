@@ -2,4 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+@include tablet {
+    width: 600px;
+    margin: 0 auto;
+}

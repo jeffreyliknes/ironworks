@@ -569,15 +569,22 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/* Content area at media query tablet and desktop */
+@media (min-width: 600px) {
+  .single-product .site-content, .post-type-archive-product .site-content, .page-template-find-us .site-content, .tax-product_type .site-content {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.27))), url(../../assets/black-steel.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.27)), url(../../assets/black-steel.jpg); }
+    .single-product .site-content .content-area, .post-type-archive-product .site-content .content-area, .page-template-find-us .site-content .content-area, .tax-product_type .site-content .content-area {
+      width: 80%;
+      margin: 0 auto;
+      background: black; } }
+
 /* Posts and pages */
 .no-results .page-content {
   display: none; }
 
 .sticky {
   display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -670,28 +677,65 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+@media (min-width: 600px) {
+  width: 600px;
+  margin: 0 auto; }
+
 .banner {
   display: relative; }
   .banner .sisters {
-    height: 83vh;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2)), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
-    background-position: 22%;
-    background-size: 100%, 515px;
+    position: relative;
+    height: 70vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../../assets/logo.svg) no-repeat, url(../../assets/stainless.jpg) no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2)), url(../../assets/logo.svg) no-repeat, url(../../assets/stainless.jpg) no-repeat;
+    background-position: 50% 20%;
+    background-size: 130%, 215px;
     opacity: 0.95; }
+    @media (min-width: 600px) {
+      .banner .sisters {
+        height: 80vh;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../../assets/logo.svg) no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2)), url(../../assets/logo.svg) no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
+        background-size: 140%, 315px;
+        background-position: 50% 20%; } }
+    @media (min-width: 1080px) {
+      .banner .sisters {
+        height: 83vh;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2)), url(../../assets/logo.svg) fixed no-repeat, url(../../assets/stainless.jpg) fixed no-repeat;
+        background-position: 22% 35%;
+        background-size: 100%, 515px;
+        opacity: 0.95; } }
     .banner .sisters .contact-banner {
       font-family: 'Ubuntu', sans-serif;
       position: absolute;
-      top: 160px;
-      right: 300px;
+      bottom: 40%;
+      right: 25%;
       list-style: none; }
-      .banner .sisters .contact-banner .fas {
-        color: black; }
-      .banner .sisters .contact-banner .underline {
+      @media (min-width: 600px) {
+        .banner .sisters .contact-banner {
+          top: 300px;
+          left: 30%; } }
+      @media (min-width: 1080px) {
+        .banner .sisters .contact-banner {
+          top: 260px;
+          left: 900px; } }
+      @media (min-width: 600px) {
+        .banner .sisters .contact-banner .banner-information {
+          position: relative; } }
+      .banner .sisters .contact-banner .banner-information .fas {
+        color: black;
+        font-size: 1.4rem; }
+        @media (min-width: 600px) {
+          .banner .sisters .contact-banner .banner-information .fas {
+            font-size: 1.6rem; } }
+      .banner .sisters .contact-banner .banner-information .underline {
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1.4rem;
         color: #681f1e; }
+        @media (min-width: 600px) {
+          .banner .sisters .contact-banner .banner-information .underline {
+            font-size: 1.6rem; } }
 
 .slogan {
   height: 100px;
@@ -828,9 +872,6 @@ object {
   text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
   .frontpage-term-link a:hover {
     color: #9c0404; }
-
-.site-footer {
-  margin-top: 4rem; }
 
 body.admin-bar .site-header {
   top: 30px; }
@@ -1013,16 +1054,33 @@ body {
   -ms-flex-item-align: center;
       align-self: center;
   padding-left: 3rem; }
-  .navigation-options ul li {
-    padding-right: 2rem; }
-    .navigation-options ul li a {
-      font-weight: 400;
-      font-size: 1.7rem;
-      color: rgba(245, 177, 50, 0.979);
-      -webkit-transition: font-size 0.3s ease-in-out;
-      transition: font-size 0.3s ease-in-out; }
-      .navigation-options ul li a:hover {
-        font-size: 1.9rem; }
+  .navigation-options ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media (min-width: 600px) {
+      .navigation-options ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .navigation-options ul li {
+      padding-right: 2rem; }
+      .navigation-options ul li a {
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: rgba(245, 177, 50, 0.979);
+        -webkit-transition: font-size 0.3s ease-in-out;
+        transition: font-size 0.3s ease-in-out; }
+        @media (min-width: 600px) {
+          .navigation-options ul li a {
+            font-size: 1.7rem; } }
+        .navigation-options ul li a:hover {
+          font-size: 1.9rem; }
 
 nav.nav-top {
   background: rgba(0, 0, 0, 0.788); }
@@ -1041,19 +1099,19 @@ nav.nav-top {
   background: linear-gradient(#414040, black); }
   .page-template-find-us .site-main {
     padding-top: 6rem;
-    width: 1120px;
     margin: 0 auto; }
-  .page-template-find-us .site-content {
-    padding-top: 7rem; }
   .page-template-find-us .navigation-options a {
     color: white; }
 
 .entry-title {
   font-family: 'Ubuntu', sans-serif;
   color: rgba(255, 195, 85, 0.452);
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
   border-bottom: 10px rgba(255, 195, 85, 0.452) groove; }
+  @media (min-width: 600px) {
+    .entry-title {
+      font-size: 4rem; } }
 
 .directions {
   height: 100px;
@@ -1216,3 +1274,23 @@ nav.nav-top {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       width: auto; }
+
+.single-product .entry-header .single-thumbnail {
+  text-align: center; }
+  .single-product .entry-header .single-thumbnail img {
+    border: white solid 1px;
+    max-width: 70%; }
+
+.entry-title {
+  padding-top: 4rem;
+  margin-top: 0; }
+
+.post-navigation {
+  display: none; }
+
+.entry-content {
+  width: 75%;
+  margin: 0 auto; }
+  .entry-content p {
+    color: white;
+    margin-bottom: 0; }

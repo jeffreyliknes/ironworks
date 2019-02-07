@@ -20,11 +20,19 @@
   align-self: center;
   padding-left: 3rem;
   ul {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
     li {
       padding-right: 2rem;
       a {
         font-weight: 400;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
+        @include tablet {
+          font-size: 1.7rem;
+        }
         color: rgba(245, 177, 50, 0.979);
         transition: font-size 0.3s ease-in-out;
         &:hover {
@@ -50,3 +58,7 @@ nav.nav-top {
 .main-carousel .carousel-cell {
   width: 100%;
 }
+
+// .menu-toggle {
+//   display: none;
+// }

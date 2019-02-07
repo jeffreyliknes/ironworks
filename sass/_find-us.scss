@@ -3,25 +3,27 @@
   background: linear-gradient(rgb(65, 64, 64), black);
   .site-main {
     padding-top: 6rem;
-    width: 1120px;
     margin: 0 auto;
   }
-  .site-content {
-    padding-top: 7rem;
-  }
+ 
   .navigation-options {
     a {
       color: white;
     }
   }
+
 }
 
 .entry-title {
     font-family: 'Ubuntu', sans-serif;
     color: rgba(255, 195, 85, 0.452);
-    font-size: 4rem;
+    font-size: 2rem;
+    @include tablet {
+      font-size: 4rem;
+    }
     text-align: center;
     border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
+    
   }
 
   .directions {

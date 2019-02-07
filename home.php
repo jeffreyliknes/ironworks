@@ -13,20 +13,20 @@ get_header(); ?>
 			</nav>
 			<section class="banner">
 				<div class="sisters">
-					<h1 class="contact-banner">
-					  <p>
+					<div class="contact-banner">
+					  <p class="banner-information">
 				        <i class="fas fa-phone"></i>
 				        <a class="underline phone-number" href="#">403-431-3667</a>
 					  </p>
-					  <p>
+					  <p class="banner-information">
 					    <i class="fas fa-envelope-open"></i>
 				        <a class="underline email-banner" href="#">ironken@gmail.com</a>
 					  </p>
-					  <p>
+					  <p class="banner-information">
 					    <i class="fas fa-directions"></i>
-				        <a class="underline directions-banner" href="./find-us">Canmore, AB</a>
+				        <a class="underline directions-banner" href="./find-us">Deadman's Flats, AB</a>
 				      </p>
-					</h1>
+                    </div>
 				</div>
 			</section>
 			

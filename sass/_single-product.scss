@@ -1,0 +1,29 @@
+.single-product {
+  .entry-header {
+    .single-thumbnail {
+        text-align: center;
+      img {
+        border: white solid 1px;
+        max-width: 70%;
+      }
+    }
+  }
+}
+.entry-title {
+  padding-top: 4rem;
+  margin-top: 0;
+}
+
+
+.post-navigation {
+    display: none;
+}
+
+.entry-content {
+    width: 75%;
+    margin: 0 auto;
+    p {
+        color: white;
+        margin-bottom: 0;
+    }
+}
