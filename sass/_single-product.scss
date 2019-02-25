@@ -27,3 +27,10 @@
         margin-bottom: 0;
     }
 }
+
+.single-product-title {
+  color: green;
+  &:hover {
+    color: orange;
+  }
+}

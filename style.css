@@ -1294,3 +1294,8 @@ nav.nav-top {
   .entry-content p {
     color: white;
     margin-bottom: 0; }
+
+.single-product-title {
+  color: green; }
+  .single-product-title:hover {
+    color: orange; }

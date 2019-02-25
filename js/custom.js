@@ -44,4 +44,10 @@ $(window).on('scroll', function(){
   }});
 
 
+  //Vanilla Javascript
+
+
+  
+
+
 })(jQuery);
