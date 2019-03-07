@@ -871,7 +871,7 @@ object {
   color: black;
   text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
   .frontpage-term-link a:hover {
-    color: green; }
+    color: #9c0404; }
 
 body.admin-bar .site-header {
   top: 30px; }

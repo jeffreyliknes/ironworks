@@ -1,0 +1,44 @@
+# dev:
+#     scheme: ftp
+#     host: ftp.my-dev-server.com
+#     port: 21
+#     user: kensiro1
+#     pass: Qg-qCDk:9nmKD6D
+#     check: true
+#     path:
+#         local: release/
+#         remote: public_html/
+
+# stage:
+#     scheme: ftp
+#     host: ftp.my-stage-server.com
+#     port: 21
+#     user: kensiro1
+#     pass: Qg-qCDk:9nmKD6D
+#     check: true
+#     path:
+#         local: release/
+#         remote: public_html/
+
+# live:
+#     scheme: ftp
+#     host: ftp.my-live-server.com
+#     port: 21
+#     user: kensiro1
+#     pass: Qg-qCDk:9nmKD6D
+#     check: true
+#     path:
+#         local: release/
+#         remote: public_html/
+
+# prod:
+#     scheme: sftp
+#     host: kensiron.ca
+#     port: 22
+#     user: kensiro1
+#     pass: Qg-qCDk:9nmKD6D
+#     branch: master
+#     check: true
+#     path:
+#         remote: 
+#     exclude: ["README.md", ".gitignore"]
