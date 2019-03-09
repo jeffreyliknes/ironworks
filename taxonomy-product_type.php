@@ -41,14 +41,14 @@ get_header(); ?>
     <a class="single-product-title" href="<?php echo get_permalink(); ?>"><?php if (  the_title()  ) : ?>
             <?php the_title(); ?>
             <?php endif; ?>
-          </a>
-     
-       
-           
+          </a> 
         </div>
     	</div>
     <?php endwhile; ?>
 		</div>
+		<div class="floral-deco-container">
+      
+			</div>	
     </div><!-- #content -->
     </main><!-- #main -->
   </div><!-- #primary -->

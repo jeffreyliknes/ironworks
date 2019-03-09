@@ -26,7 +26,7 @@
 					  </p>
 					  <p>
 					    <i class="fas fa-directions"></i>
-				        <a class="underline directions-banner" href="./find-us">Unit 1, 2 Limestone Valley, Deadman's Flats, Canmore</a>
+				        <a class="underline directions-banner" href="./find-us">Unit 1, 2 Limestone Valley, Deadman's Flats</a>
 				      </p>
 					</div>
 					<div class="footer-logo-wrapper">	<a href="<?php bloginfo( 'url' ); ?>">

@@ -26,6 +26,9 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		<div class="floral-deco-container">
+      
+	  </div>	
 	</div><!-- #primary -->
 
 

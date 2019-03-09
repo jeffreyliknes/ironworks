@@ -5,7 +5,7 @@
   flex-direction: column;
   .site-main {
     padding-top: 10rem;
-    width: 1120px;
+    // width: 1120px;
     margin: 0 auto;
   }
 }
@@ -26,11 +26,17 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   a {
     font-family: 'Ubuntu', sans-serif;
     color: rgba(255, 195, 85, 0.452);
-    font-size: 2rem;
+    font-size: 1.3rem;
+    @include tablet {
+      font-size: 1.7rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+    }
     text-decoration: none;
     &:hover {
       text-decoration: underline;
-      color: rgba(197, 129, 2, 0.925);
+      color: rgba(247, 183, 64, 0.925);
     }
   }
 }
@@ -63,31 +69,37 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   color: rgba(255, 195, 85, 0.452);
 }
 
-.product-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  @include container-block;
-  grid-gap: 30px;
-  padding-bottom: 3rem;
+// .product-container {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   @include tablet {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   } 
+//   @include desktop {
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//   } 
+//   @include container-block;
+//   grid-gap: 30px;
+//   padding-bottom: 3rem;
 
-  .thumbnail-container {
-    background-color: black;
-    border-radius: 25%;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
+//   .thumbnail-container {
+//     background-color: black;
+//     border-radius: 25%;
+//     height: 250px;
+//     overflow: hidden;
+//     position: relative;
 
-    img {
-      left: 50%;
-      min-height: 250px;
-      max-width: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: auto;
-    }
-  }
-}
+//     img {
+//       left: 50%;
+//       min-height: 250px;
+//       max-width: none;
+//       position: absolute;
+//       top: 50%;
+//       transform: translate(-50%, -50%);
+//       width: auto;
+//     }
+//   }
+// }
 
 .single-product-title {
   text-decoration: none;
@@ -105,6 +117,12 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   background-size: 93%;
   transform: rotate(180deg);
   background-position-y: 45%;
+  @include tablet {
+    height: 15vh;
+  }
+  @include desktop {
+    height: 25vh;
+  }
   
 
 }

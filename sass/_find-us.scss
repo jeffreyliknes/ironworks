@@ -5,28 +5,34 @@
     padding-top: 6rem;
     margin: 0 auto;
   }
- 
+
   .navigation-options {
     a {
       color: white;
     }
   }
-
 }
 
 .entry-title {
-    font-family: 'Ubuntu', sans-serif;
-    color: rgba(255, 195, 85, 0.452);
-    font-size: 2rem;
-    @include tablet {
-      font-size: 4rem;
-    }
-    text-align: center;
-    border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
-    
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(255, 195, 85, 0.452);
+  font-size: 2rem;
+  @include tablet {
+    font-size: 4rem;
   }
+  text-align: center;
+  border-bottom: 10px rgba(255, 195, 85, 0.452) groove;
+}
 
-  .directions {
-      height: 100px;
-      background: red;
+.directions-container {
+  background: black;
+  color: white;
+  list-style: upper-alpha;
+  .directions-shop {
+    margin-left: 1rem;
+    @include desktop {
+      padding-left: 10rem;
+      color: white;
+    }
   }
+}
