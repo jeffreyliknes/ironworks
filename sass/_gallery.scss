@@ -15,7 +15,6 @@
   color: rgba(255, 195, 85, 0.452);
   font-size: 4rem;
   text-align: center;
-  
 }
 
 $galleryColor: rgba(253, 253, 253, 0.452);
@@ -44,20 +43,20 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   border-bottom: 10px rgba(253, 253, 253, 0.452), groove;
 }
 
-  .product-container {
-    padding-top: 3rem;
-    border-top: dashed 2px rgba(255, 195, 85, 0.452); 
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 1px dashed rgba(255, 195, 85, 0.452);
-    .product-archive {
-      img {
-        border-radius: 25%;
-        height: 300px;
-        width: auto;
-      }
+.product-container {
+  padding-top: 3rem;
+  border-top: dashed 2px rgba(255, 195, 85, 0.452);
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px dashed rgba(255, 195, 85, 0.452);
+  .product-archive {
+    img {
+      border-radius: 25%;
+      height: 300px;
+      width: auto;
     }
   }
+}
 
 .archive-product-info {
   text-align: center;
@@ -94,4 +93,18 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   color: rgb(85, 85, 238);
+}
+
+
+//Floral design above the footer
+
+.floral-deco-container {
+  height: 25vh;
+  background: url(../../assets/floral-deco.png) no-repeat;
+  background-position: center;
+  background-size: 93%;
+  transform: rotate(180deg);
+  background-position-y: 45%;
+  
+
 }

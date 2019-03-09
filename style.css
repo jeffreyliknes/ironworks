@@ -709,17 +709,17 @@ object {
     .banner .sisters .contact-banner {
       font-family: 'Ubuntu', sans-serif;
       position: absolute;
-      bottom: 40%;
+      bottom: 10%;
       right: 25%;
       list-style: none; }
       @media (min-width: 600px) {
         .banner .sisters .contact-banner {
-          top: 300px;
-          left: 30%; } }
+          top: 275px;
+          left: 33%; } }
       @media (min-width: 1080px) {
         .banner .sisters .contact-banner {
-          top: 260px;
-          left: 900px; } }
+          top: 210px;
+          left: 800px; } }
       @media (min-width: 600px) {
         .banner .sisters .contact-banner .banner-information {
           position: relative; } }
@@ -732,6 +732,8 @@ object {
       .banner .sisters .contact-banner .banner-information .underline {
         text-decoration: none;
         font-size: 1.4rem;
+        font-weight: 600;
+        text-shadow: 1px 0 black, 0 0.5px black, 0.1px 0 black, 0 0.4px black;
         color: #681f1e; }
         @media (min-width: 600px) {
           .banner .sisters .contact-banner .banner-information .underline {
@@ -748,7 +750,11 @@ object {
   .slogan .main-carousel h2 {
     text-align: center;
     color: rgba(255, 195, 85, 0.452);
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem; }
+    @media (min-width: 600px) {
+      .slogan .main-carousel h2 {
+        font-size: 2rem; } }
 
 .frontpage-shop {
   text-align: center; }
@@ -758,9 +764,12 @@ object {
     font-size: 4rem; }
 
 .frontpage-block-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: block; }
+  @media (min-width: 600px) {
+    .frontpage-block-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .frontpage-term {
   min-height: 60vh;
@@ -852,9 +861,12 @@ object {
 
 .frontpage-term p {
   text-transform: uppercase;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC';
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 1.6em; }
+  @media (min-width: 600px) {
+    .frontpage-term p {
+      font-family: 'Amatic SC', cursive; } }
 
 .frontpage-term p:nth-child(2) {
   font-size: 2.5rem; }
@@ -870,6 +882,9 @@ object {
   text-decoration: none;
   color: black;
   text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
+  @media (min-width: 600px) {
+    .frontpage-term-link a {
+      text-shadow: -1px -1px 0 white, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; } }
   .frontpage-term-link a:hover {
     color: #9c0404; }
 
@@ -1000,20 +1015,21 @@ body {
 
 .site-info {
   height: 220px;
-  color: white;
-  background: url(../../assets/dark-wood.png); }
+  color: white; }
 
-.footer-info .footer-wrapper .footer-contact-banner p {
-  font-size: 14px; }
-  @media (min-width: 600px) {
-    .footer-info .footer-wrapper .footer-contact-banner p {
-      font-size: 1rem; } }
-  .footer-info .footer-wrapper .footer-contact-banner p i {
-    color: #b4aea2; }
-  .footer-info .footer-wrapper .footer-contact-banner p a {
-    text-decoration: none;
-    color: #f5cf89;
-    font-family: 'Ubuntu', sans-serif; }
+.footer-info .footer-wrapper {
+  border-top: 1px solid #a57b3a; }
+  .footer-info .footer-wrapper .footer-contact-banner p {
+    font-size: 14px; }
+    @media (min-width: 600px) {
+      .footer-info .footer-wrapper .footer-contact-banner p {
+        font-size: 1rem; } }
+    .footer-info .footer-wrapper .footer-contact-banner p i {
+      color: #b4aea2; }
+    .footer-info .footer-wrapper .footer-contact-banner p a {
+      text-decoration: none;
+      color: #A57B3A;
+      font-family: 'Ubuntu', sans-serif; }
 
 @media (min-width: 600px) {
   .footer-logo-wrapper {
@@ -1081,6 +1097,10 @@ body {
             font-size: 1.7rem; } }
         .navigation-options ul li a:hover {
           font-size: 1.9rem; }
+
+.home #primary-menu a {
+  color: #631513;
+  text-shadow: 0.1px -0.1px 0 black, 0.1px -0.1px 0 black, -0.1px 0.1px 0 black, 0.3px 0.1px 0 black; }
 
 nav.nav-top {
   background: rgba(0, 0, 0, 0.788); }
@@ -1185,7 +1205,6 @@ nav.nav-top {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px;
   grid-gap: 30px;
   padding-bottom: 3rem; }
   .product-container .thumbnail-container {
@@ -1208,6 +1227,15 @@ nav.nav-top {
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   color: #5555ee; }
+
+.floral-deco-container {
+  height: 25vh;
+  background: url(../../assets/floral-deco.png) no-repeat;
+  background-position: center;
+  background-size: 93%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-position-y: 45%; }
 
 .archive {
   background: -webkit-gradient(linear, left top, left bottom, from(#414040), to(black));
@@ -1254,10 +1282,9 @@ nav.nav-top {
 
 .product-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px;
   grid-gap: 30px; }
   .product-container .thumbnail-container {
     background-color: black;
@@ -1299,3 +1326,9 @@ nav.nav-top {
   color: green; }
   .single-product-title:hover {
     color: orange; }
+
+.bottom-banner-container {
+  height: 60vh;
+  background: url(../../assets/silver-pagebreak.png) no-repeat;
+  background-position: center;
+  background-size: 50%; }

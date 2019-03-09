@@ -93,7 +93,10 @@ get_header(); ?>
     			<?php endforeach;?>
         
     	</div>
-    </section>
+	</section>
+	<section class="bottom-banner-container">
+		
+	</section>
 
 
 

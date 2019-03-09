@@ -44,7 +44,7 @@
   
   .product-container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       @include container-block;
       grid-gap: 30px;
       

@@ -13,6 +13,7 @@ get_header(); ?>
 			  <header class="page-header">
 			 <h2 class="page-title">Archive</h2>
           <div class="shop-term-container">
+          
         
         <?php
         
@@ -27,7 +28,8 @@ get_header(); ?>
           <p><?php echo $term->name; ?></p></a>        
 			  </div>
 			
-		    <?php endforeach; ?>		
+        <?php endforeach; ?>
+        	
     </div>
   </header><!-- .page-header -->
       
@@ -47,13 +49,17 @@ get_header(); ?>
 		  <div class="archive-product-info">         
        
         <a class="single-product-title" href="<?php echo get_permalink(); ?>"><?php if (  the_title()  ) : ?>
-            <?php the_title(); ?>
-            <?php endif; ?>
-          </a>       
-        </div>
+          <?php the_title(); ?>
+          <?php endif; ?>
+        </a>       
+      </div>
       </div>
     <?php endwhile; ?>
     </div>
+    <div class="floral-deco-container">
+      
+    </div>	
+
     </div><!-- #content -->
   </main><!-- #main -->
 </div><!-- #primary -->
