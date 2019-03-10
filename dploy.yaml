@@ -42,3 +42,15 @@
 #     path:
 #         remote: 
 #     exclude: ["README.md", ".gitignore"]
+
+prod:
+    scheme: sftp
+    host: kensiron.ca
+    port: 22
+    user: kensiro1
+    pass: Qg-qCDk:9nmKD6D
+    branch: master
+    check: true
+    path:
+        remote: public_html/
+    exclude: ["README.md", ".gitignore"]
