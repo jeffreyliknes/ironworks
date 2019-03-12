@@ -44,9 +44,9 @@
 #     exclude: ["README.md", ".gitignore"]
 
 prod:
-    scheme: sftp
-    host: kensiron.ca
-    port: 22
+    scheme: ftp
+    host: 162.241.129.106
+    port: 21
     user: kensiro1
     pass: Qg-qCDk:9nmKD6D
     branch: master
