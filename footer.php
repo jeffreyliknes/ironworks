@@ -22,7 +22,7 @@
 					  </p>
 					  <p>
 					    <i class="fas fa-envelope-open"></i>
-				        <a class="underline email-banner" href="#">ironken@gmail.com</a>
+				        <a class="underline email-banner" href="#">khodgins.ironworks@gmail.com</a>
 					  </p>
 					  <p>
 					    <i class="fas fa-directions"></i>
