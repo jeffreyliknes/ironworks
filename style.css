@@ -708,7 +708,7 @@ object {
       font-family: 'Ubuntu', sans-serif;
       position: absolute;
       bottom: 10%;
-      right: 25%;
+      right: 3%;
       list-style: none; }
       @media (min-width: 600px) {
         .banner .sisters .contact-banner {
@@ -1139,7 +1139,7 @@ nav.nav-top {
     margin-left: 1rem; }
     @media (min-width: 1024px) {
       .directions-container .directions-shop {
-        padding-left: 10rem;
+        padding-left: 9rem;
         color: white; } }
 
 .page-template-archive-product {

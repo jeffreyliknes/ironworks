@@ -52,5 +52,5 @@ prod:
     branch: master
     check: true
     path:
-        remote: public_html/
+        remote: /home/kensiro1/public_html/wp-content/themes/ironworks/
     exclude: ["README.md", ".gitignore"]
