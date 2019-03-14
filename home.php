@@ -94,16 +94,15 @@ get_header(); ?>
         
     	</div>
 	</section>
-	<section class="bottom-banner-container">
+	<!-- <section class="bottom-banner-container">
 		
-	</section>
-
-
-
+	</section> -->
+	<div class="floral-deco-container">
+      
+    </div>
 	</div>
-</section>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+  </section>
+</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

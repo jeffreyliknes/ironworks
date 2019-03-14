@@ -69,37 +69,6 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   color: rgba(255, 195, 85, 0.452);
 }
 
-// .product-container {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   @include tablet {
-//     grid-template-columns: 1fr 1fr 1fr;
-//   } 
-//   @include desktop {
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//   } 
-//   @include container-block;
-//   grid-gap: 30px;
-//   padding-bottom: 3rem;
-
-//   .thumbnail-container {
-//     background-color: black;
-//     border-radius: 25%;
-//     height: 250px;
-//     overflow: hidden;
-//     position: relative;
-
-//     img {
-//       left: 50%;
-//       min-height: 250px;
-//       max-width: none;
-//       position: absolute;
-//       top: 50%;
-//       transform: translate(-50%, -50%);
-//       width: auto;
-//     }
-//   }
-// }
 
 .single-product-title {
   text-decoration: none;
@@ -125,4 +94,20 @@ $galleryColor: rgba(253, 253, 253, 0.452);
   }
   
 
+}
+
+.home .floral-deco-container {
+  height: 25vh;
+  background: url(../../assets/floral-deco.png) no-repeat;
+  background-position: center;
+  background-size: 93%;
+  transform: rotate(180deg);
+  background-position-y: 45%;
+  @include tablet {
+    height: 25vh;
+  }
+  @include desktop {
+    height: 50vh;
+
+  }
 }

@@ -1,3 +1,8 @@
+.home {
+  background: rgba(0, 0, 0, 0.911);
+}
+
+
 .banner {
   display: relative;
   .sisters {
@@ -215,17 +220,3 @@
   }
 }
 
-// .banner {
-//   display: relative;
-//   .sisters {
-//     height: 83vh;
-//     background: linear-gradient(
-//         180deg,
-//         rgba(0, 0, 0, 0.1) 0,
-//         rgba(0, 0, 0, 0.2)
-//       ),
-//       url(../../assets/logo.svg) fixed no-repeat,
-//       url(../../assets/stainless.jpg) fixed no-repeat;
-//     background-position: 22%;
-//     background-size: 100%, 515px;
-//     opacity: 0.95;
