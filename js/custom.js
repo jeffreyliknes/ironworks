@@ -1,11 +1,12 @@
 (function($) {
   $(document).ready();
 
-
+ 
 // Carousel for front page flickity
 //https://flickity.metafizzy.co/style.html
 
  $('.main-carousel').flickity({
+ 
   // options
   cellAlign: 'left',
   contain: true,
@@ -42,6 +43,9 @@ $(window).on('scroll', function(){
   } else {
   ($('nav').removeClass('nav-top'))
   }});
+
+ 
+console.log('biotch');
 
 
 

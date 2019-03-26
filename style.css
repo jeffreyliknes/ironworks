@@ -894,7 +894,8 @@ body.admin-bar .site-header {
 
 .site-info {
   height: 220px;
-  color: white; }
+  color: white;
+  background: black; }
 
 .footer-info .footer-wrapper {
   border-top: 1px solid #a57b3a; }
@@ -925,6 +926,9 @@ body.admin-bar .site-header {
 .copyright {
   text-align: center;
   padding-bottom: 1rem; }
+
+.page-template-find-us .entry-content {
+  text-align: center; }
 
 .header-logo {
   height: 60px;
@@ -1190,7 +1194,7 @@ nav.nav-top {
     .product-container .thumbnail-container img {
       left: 50%;
       min-height: 250px;
-      max-width: 250px;
+      max-width: 330px;
       position: absolute;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
