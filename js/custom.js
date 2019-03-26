@@ -45,8 +45,8 @@ $(window).on('scroll', function(){
   }});
 
  
-console.log('biotch');
 
+  console.log('biotch');
 
 
 })(jQuery);
